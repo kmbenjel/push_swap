@@ -10,11 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libftprintf.a
+NAME = push_swap.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar -rc
-SRC =	ft_printf.c \
+SRC =	libft/ft_printf.c \
 		libft/ft_itoa.c \
 		libft/ft_strlen.c \
 		libft/ft_strchr.c \
@@ -24,14 +24,14 @@ SRC =	ft_printf.c \
 		libft/ft_strjoin.c \
 		libft/ft_putstr_fd.c \
 		libft/ft_putchar_fd.c \
-		conversion_functions/ft_print_string.c \
-		conversion_functions/ft_print_decimal.c \
-		conversion_functions/ft_print_percent.c \
-		conversion_functions/ft_print_pointer.c \
-		conversion_functions/ft_print_unsigned.c \
-		conversion_functions/ft_print_character.c \
-		conversion_functions/ft_print_hexadecimal_lowercase.c \
-		conversion_functions/ft_print_hexadecimal_uppercase.c \
+		libft/conversion_functions/ft_print_string.c \
+		libft/conversion_functions/ft_print_decimal.c \
+		libft/conversion_functions/ft_print_percent.c \
+		libft/conversion_functions/ft_print_pointer.c \
+		libft/conversion_functions/ft_print_unsigned.c \
+		libft/conversion_functions/ft_print_character.c \
+		libft/conversion_functions/ft_print_hexadecimal_lowercase.c \
+		libft/conversion_functions/ft_print_hexadecimal_uppercase.c \
 
 OBJ = $(SRC:.c=.o)
 
